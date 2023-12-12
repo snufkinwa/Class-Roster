@@ -1,3 +1,6 @@
+#ifndef ROSTER_H
+#define ROSTER_H
+
 #pragma once
 #include "student.h" // Include the Student class
 
@@ -27,3 +30,6 @@ public:
 
     // Print student information for a specific degree program
 };
+#endif // !
+
+
