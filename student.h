@@ -1,50 +1,53 @@
 #ifndef STUDENT_H
-#define STUDENT_H
+#define STUDENT_H 
 
-#include<iostream>
 #include <string>
-#include <vector>
-#include "degree.h" // Include the degree.h header file
+#include "degree.h"
 
 using std::string;
-using std::vector;
-using std::cout; 
 
 class Student {
+public:
+    // Default constructor
+    Student();
+
+    // Parameterized constructor
+    Student(string ID, string first, string last, string email, int studentAge,
+        int daysToComplete1, int daysToComplete2, int daysToComplete3, enum DegreeProgram degree);
+
+    // Setter methods for member variables
+    void setStudentID(string);
+    void setFirstName(string);
+    void setLastName(string);
+    void setEmailAddress(string);
+    void setAge(int);
+    void setDaysToComplete(int[3]);
+    void setDegreeProgram(enum DegreeProgram);
+
+    // Getter methods for member variables
+    string getStudentID();
+    string getFirstName();
+    string getLastName();
+    string getEmailAddress();
+    int getAge();
+    int* getDaysToComplete();
+    enum DegreeProgram getDegreeProgram();
+
+    // Print method to display student information
+    void print(Student);
+
 private:
-    // Variable to store 
+    // Member variables
     string studentID;
     string firstName;
     string lastName;
     string emailAddress;
-    int studentAge;
-    vector<int> daysToCompleteCourses; 
-    DegreeProgram degreeprogram;
-
-public:
-    //Constructor with Parameters 
-    Student(string id, string first,string last, string email, int studentAge, const vector<int> days, DegreeProgram degreeprogram);
-
-    // Accessors (getters)
-    int getStudentID() const;
-    string getFirstName() const;
-    string getLastName() const;
-    string getEmailAddress() const;
-    int getAge() const;
-    vector<int> getDaysToCompleteCourses() const;
-    DegreeProgram getDegreeProgram() const;
-
-    // Mutators (setters)
-    void setStudentID(int id);
-    void setFirstName(string first);
-    void setLastName(string last);
-    void setEmailAddress(string email);
-    void setAge(int studentAge);
-    void setDaysToCompleteCourses(const vector<int>& days);
-    void setDegreeProgram(DegreeProgram degreeprogram);
-
-    // Print student data
-    void print();
-
+    int age;
+    int daysToComplete[3];
+    enum DegreeProgram degree;
 };
-#endif
+
+
+#endif // !STUDENT_H
+
+
