@@ -113,13 +113,13 @@ void Student::print(Student s) {
 
     // Print student information;
     cout << s.getStudentID();
-    cout << "\t\t " <<s.getFirstName();
-    cout << "\t\t " << s.getLastName();
-    cout << "\t\t " << s.getAge() << "\t\t { ";
+    cout << "\tFirst Name: " <<s.getFirstName();
+    cout << "\tLast Name: " << s.getLastName();
+    cout << "\tAge: " << s.getAge() << "\t daysinCourse: { ";
     for (int i = 0; i < 3; i++) {
         cout << s.getDaysToComplete()[i] << ' ';
     }
     cout << "}";
-    cout << "\t\t " << d;
+    cout << "\tDegree Program: " << d;
     cout << endl;
 }

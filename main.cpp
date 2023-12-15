@@ -7,17 +7,18 @@ using namespace std;
 int main() {
 
     std::cout << R"(
- /$$$$$$   /$$$$$$   /$$$$$$  /$$$$$$$$
- /$$__  $$ /$$__  $$ /$$__  $$|_____ $$/
-| $$  \__/| $$  \ $$| $$  \__/     /$$/ 
-| $$      |  $$$$$$/| $$$$$$$     /$$/  
-| $$       >$$__  $$| $$__  $$   /$$/   
-| $$    $$| $$  \ $$| $$  \ $$  /$$/    
-|  $$$$$$/|  $$$$$$/|  $$$$$$/ /$$/     
- \______/  \______/  \______/ |__/ 
-                                     
-⠀)";
-    std::cout << endl;
+******************************************
+*            ______    ______   ________ *
+*           /      \  /      \ |        \*
+*  _______ |  $$$$$$\|  $$$$$$\ \$$$$$$$$*
+* /       \| $$__/ $$| $$___\$$    /  $$ *
+*|  $$$$$$$ >$$    $$| $$    \    /  $$  *
+*| $$      |  $$$$$$ | $$$$$$$\  /  $$   *
+*| $$_____ | $$__/ $$| $$__/ $$ /  $$    *
+* \$$     \ \$$    $$ \$$    $$|  $$     *
+*  \$$$$$$$  \$$$$$$   \$$$$$$  \$$      *
+******************************************
+⠀)"<< endl;
     // Print course information
     std::cout << "Scripting and Programing - Applications - C867" << endl;
     std::cout << "Programming Language: C++" << endl;
@@ -26,7 +27,6 @@ int main() {
     std::cout << endl;
 
     // Array of student data
-
     const string studentData[] = { "A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
         "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
         "A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
@@ -44,7 +44,6 @@ int main() {
 
     // Print all students in the roster
     std::cout << "Displaying all students: " << endl;
-    cout << "StudentID  \t| First Name\t| Last Name\t| Age\t| Days In Course\t| Degree Program\t|" << endl;
     classRoster.printAll();
     std::cout << endl;
 
@@ -63,7 +62,6 @@ int main() {
 
     // Print students in a specific degree program
     std::cout << "Displaying students in Degree Program SOFTWARE: " << endl;
-    cout << "StudentID  \t| First Name\t| Last Name\t| Age\t| Days In Course\t| Degree Program\t|" << endl;
     classRoster.printByDegreeProgram(DegreeProgram::SOFTWARE);
     std::cout << endl;
 
@@ -74,7 +72,6 @@ int main() {
 
     // Print all students in the roster
     std::cout << "Displaying all students: " << endl;
-    cout << "StudentID  \t| First Name\t| Last Name\t| Age\t| Days In Course\t| Degree Program\t|" << endl;
     classRoster.printAll();
     std::cout << endl;
 
