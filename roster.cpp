@@ -34,7 +34,7 @@ void Roster::remove(string studentID) {
 		i++;
 	}
 	if (studentIndex == -1) {
-		std::cout <<  studentID << " was not found.";
+		std::cout <<"Student ID " << studentID << " was not found.";
 	}
 }
 
