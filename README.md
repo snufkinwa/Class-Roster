@@ -1,4 +1,4 @@
-# C867 Class Roster
+# Class Roster
 
 ## Scenario
 
