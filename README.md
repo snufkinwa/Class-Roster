@@ -1,3 +1,7 @@
+<p align="center">
+<img src = "https://i.ibb.co/ccHxjq2/Class.png"  />
+</p>
+
 # Class Roster
 
 ## Scenario
