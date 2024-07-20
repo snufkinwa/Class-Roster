@@ -1,5 +1,5 @@
 <p align="center">
-<img src = "https://i.ibb.co/ccHxjq2/Class.png"  />
+<img src = "https://i.imgur.com/OFXx88m.png"  />
 </p>
 
 # Class Roster
